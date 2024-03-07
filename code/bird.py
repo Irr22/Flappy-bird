@@ -9,7 +9,7 @@ class bird(pygame.sprite.Sprite):
 
         self.animacion_num = 0
 
-        self.bird = pygame.transform.scale(pygame.image.load(f"flappy bird/Imagenes/bird/{self.animacion_num}.png"),(50,50))
+        self.bird = pygame.transform.scale(pygame.image.load(f"../flappy bird/Imagenes/bird/{self.animacion_num}.png"),(50,50))
         self.image = self.bird
         self.rect = self.image.get_rect()
 
@@ -26,7 +26,7 @@ class bird(pygame.sprite.Sprite):
             self.animacion_num += 1
             if self.animacion_num == 3:
                 self.animacion_num = 0
-            self.bird = pygame.transform.scale(pygame.image.load(f"flappy bird/Imagenes/bird/{self.animacion_num}.png"),(50,50))
+            self.bird = pygame.transform.scale(pygame.image.load(f"../flappy bird/Imagenes/bird/{self.animacion_num}.png"),(50,50))
 
             self.ultima_vez_animado = tiempo_actual
 
@@ -43,3 +43,4 @@ class bird(pygame.sprite.Sprite):
 
         if self.estado == 'bajar':
             self.gravedad(tiempo_actual)
+            
