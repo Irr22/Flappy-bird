@@ -3,7 +3,7 @@ from config import *
 
 class background:
     def __init__(self,x,y):
-        self.fondo = pygame.image.load("flappy bird/Imagenes/background.png").convert_alpha()
+        self.fondo = pygame.image.load("../flappy bird/Imagenes/background.png").convert_alpha()
         self.rect = self.fondo.get_rect()
         self.rect.x = x
         self.rect.y = y
