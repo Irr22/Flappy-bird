@@ -5,7 +5,7 @@ class tuberia(pygame.sprite.Sprite):
         super().__init__()
         pygame.init()
 
-        self.columna_1 = pygame.image.load(f"flappy bird/Imagenes/tuberia_{str(num_tuberia)}.png").convert_alpha()
+        self.columna_1 = pygame.image.load(f"../flappy bird/Imagenes/tuberia_{str(num_tuberia)}.png").convert_alpha()
         self.image = self.columna_1
         self.rect = self.image.get_rect()
 
